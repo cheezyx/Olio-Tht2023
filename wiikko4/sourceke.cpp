@@ -24,6 +24,7 @@ double Asunto::laskeKulutus(double h){
     return kulutus;
 };
 
+
 Kerros::Kerros() {
     cout<<"Kerros luotu"<<endl;
 }
