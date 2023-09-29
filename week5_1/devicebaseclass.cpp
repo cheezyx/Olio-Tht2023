@@ -8,7 +8,7 @@ DeviceBaseClass::DeviceBaseClass()
 
 void DeviceBaseClass::setDeviceID()
 {
-    cout<<"Anna device ID"<<endl;
+    cout<<"Give device ID"<<endl;
     cin>>deviceID;
 }
 
