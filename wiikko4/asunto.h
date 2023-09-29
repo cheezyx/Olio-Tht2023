@@ -18,7 +18,11 @@ public:
 class Kerros {
 public:
     Kerros();
-    Asunto as1,as2,as3,as4;
+    virtual ~Kerros();
+    Asunto* as1;
+    Asunto* as2;
+    Asunto* as3;
+    Asunto* as4;
     virtual void maaritaAsunnot(void);
     double laskeKulutus(double);
 };
@@ -26,7 +30,8 @@ public:
 class Katutaso: public Kerros {
 public:
     Katutaso();
-    Asunto as1,as2;
+    Asunto* as1;
+    Asunto* as2;
     virtual void maaritaAsunnot(void) override;
     double laskeKulutus(double);
 };
@@ -34,11 +39,12 @@ public:
 class Kerrostalo {
 public:
     Kerrostalo();
+    ~Kerrostalo();
     double laskeKulutus(double);
 
 private:
-    Katutaso eka;
-    Kerros toka;
-    Kerros kolmas;
+    Katutaso* eka;
+    Kerros* toka;
+    Kerros* kolmas;
 };
 
